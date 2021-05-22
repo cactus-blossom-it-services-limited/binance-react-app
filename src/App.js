@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Coin from './Coin';
 
@@ -29,7 +29,10 @@ function App() {
       <div className="coin-search">
         <h1 className="coin-text">Search a currency</h1>
         <form>
-          <input type="text" placeholder="Search" 
+          <input 
+          type="text"
+          onChange={handleChange} 
+          placeholder="Search" 
           className="coin-input"/>
         </form>
       </div>
