@@ -1,4 +1,5 @@
 import React from 'react';
+import './Coin.css';
 
 const Coin = ({ name, image, symbol, price, volume }) => {
     return (
@@ -12,10 +13,8 @@ const Coin = ({ name, image, symbol, price, volume }) => {
                 <div className="coin-data">
                     <p className="coin-price">{price}</p>
                     <p className="coin-volume">${volume.toLocaleString()}</p>
-
                 </div>
             </div>
-           return  
         </div>
     );
 };
